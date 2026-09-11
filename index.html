@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title> ابو عبدالله </title>
+<title>مشروع عمر - مؤمن 🔒</title>
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#0F766E">
+<link rel="apple-touch-icon" href="./icon_192.png">
+<link rel="icon" type="image/png" href="./icon_192.png">
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F0FDFA;--bg-soft:#CCFBF1;--card:#FFFFFF;--card-border:#5EEAD4;--text:#134E4A;--text-soft:#0D9488;--hero:#0F766E;}
@@ -27,7 +31,7 @@ body{display:flex;flex-direction:column}
 </head>
 <body>
 <div class="top">
-  <div style="display:flex;align-items:center;gap:8px"><div class="logo">🔒 عمر</div><div id="syncStatusMain">🔐 جاري التأمين...</div></div>
+  <div style="display:flex;align-items:center;gap:8px"><div class="logo">🔒 عمر الموحد</div><div id="syncStatusMain">🔐 جاري التأمين...</div></div>
   <div class="theme-picker">
     <div class="theme-dot active" data-theme="teal" style="background:#F0FDFA;border:1px solid #5EEAD4">🌿</div>
     <div class="theme-dot" data-theme="dark" style="background:#0F172A;color:#fff">🌙</div>
@@ -2533,5 +2537,18 @@ onAuthStateChanged(auth, async (user)=>{
 // try immediate sign in
 try{ await signInAnonymously(auth); }catch(e){}
 </script>
+
+<script>
+if('serviceWorker' in navigator){
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('./sw.js').then(function(reg){
+      console.log('PWA ready', reg.scope);
+    }).catch(function(err){
+      console.log('PWA failed', err);
+    });
+  });
+}
+</script>
+
 </body>
 </html>
