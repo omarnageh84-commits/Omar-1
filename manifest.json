@@ -1,0 +1,26 @@
+{
+  "name": "Omar - مؤمن 🔒 v11",
+  "short_name": "Omar Secure",
+  "description": "Omar Unified - Firebase Realtime Secure - Daily + Tasks + Attendance",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F0FDFA",
+  "theme_color": "#0F766E",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
