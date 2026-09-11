@@ -1,8 +1,9 @@
 {
-  "name": "Omar - مؤمن 🔒 v11",
-  "short_name": "Omar Secure",
-  "description": "Omar Unified - Firebase Realtime Secure - Daily + Tasks + Attendance",
+  "name": "Omar",
+  "short_name": "أبو عبدالله",
+  "description": "Omar System - أبو عبدالله",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#F0FDFA",
   "theme_color": "#0F766E",
